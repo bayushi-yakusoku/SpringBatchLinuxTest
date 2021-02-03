@@ -8,11 +8,11 @@ function print_transactions()
   local account=$1
 
   for trans in $(seq -w $(random 20)); do
-    printf "$account,2021-03-$(random 10 30)"
+    printf "$account,2021-03-$(random 10 30) "
     printf "$(random 10 23):$(random 10 59):$(random 10 59),"
     printf "$(random 10000).$(random 99)\n"
   
-    printf "$account,2021-03-$(random 10 30)"
+    printf "$account,2021-03-$(random 10 30) "
     printf "$(random 10 23):$(random 10 59):$(random 10 59),-"
     printf "$(random 10000).$(random 99)\n"
   done
